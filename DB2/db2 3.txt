@@ -1,0 +1,6 @@
+service name: DB2-0
+
+
+C:\SQLLIB\BIN\db2cwadmin.bat
+db2 start
+db2 create database testdb

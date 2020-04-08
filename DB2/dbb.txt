@@ -1,0 +1,136 @@
+                                        
+
+Product to install:                     	DB2 Server Edition - DB2COPY1
+
+Installation type:                      	Custom
+
+                                        
+
+DB2 copy name:                          	DB2COPY1
+
+Set as default DB2 copy:                	Yes
+
+Set as default IBM database client interface copy:	Yes
+
+                                        
+
+Selected features:                      
+
+    Base application development tools  	
+
+    Base client support                 	
+
+    Connect support                     	
+
+    Informix data source support        	
+
+    JDBC data source support            	
+
+    ODBC data source support            	
+
+    Oracle data source support          	
+
+    SQL Server data source support      	
+
+    Sybase data source support          	
+
+    Teradata data source support        	
+
+    IBM Data Server Provider for .NET   	
+
+    Federated Data Access Support       	
+
+    First Steps                         	
+
+    Spatial Extender client             	
+
+    Guardium Installation Manager Client	
+
+    DB2 Update Service                  	
+
+    JDBC Support                        	
+
+    IBM Software Development Kit (SDK) for Java(TM)	
+
+    DB2 LDAP support                    	
+
+    Application data sources            	
+
+    Scientific Data Sources             	
+
+    Structured file data sources        	
+
+    ODBC Support                        	
+
+    OLE DB Support                      	
+
+    Replication tools                   	
+
+    Sample database source              	
+
+    SQLJ Support                        	
+
+    IBM Secure Shell Server for Windows 	
+
+    DB2 WMI Provider                    	
+
+                                        
+
+Languages:                              
+
+    English                             	
+
+                                        
+
+Target directory:                       	C:\SQLLIB
+
+                                        
+
+Space required:                         	2421 MB
+
+Installation specific driver details    
+
+IBM Data Server Driver for ODBC and CLI name:	IBM DB2 ODBC DRIVER - DB2COPY1
+
+OLE DB Provider GUID:                   	{6AABB10C-789E-4082-89BF-35DA603B2A21}
+
+                                        
+
+New instances:                          
+
+    Instance name:                      	DB2
+
+        Start instance on reboot:       	Yes
+
+        TCP/IP configuration:           	
+
+            Service name:               	db2c_DB2
+
+            Port number:                	50000
+
+        Instance user information:      	
+
+            User name:                  	db2admin
+
+                                        
+
+DB2 Administration server:              
+
+    Instance user information:          	
+
+        User name:                      	db2admin
+
+                                        
+
+                                        
+
+IBM Secure Shell Server for Windows:    
+
+                                        
+
+        IBM SSH Server target directory:	C:\Program Files\IBM\IBM SSH Server
+
+        IBM SSH server service startup type:	Manual
+
+                                        
+

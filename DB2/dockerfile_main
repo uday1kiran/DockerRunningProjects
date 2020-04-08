@@ -1,0 +1,20 @@
+# escape=`
+FROM mcr.microsoft.com/windows/servercore:ltsc2019
+
+SHELL ["powershell", "-Command", "$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]
+
+RUN [Net.ServicePointManager]::SecurityProtocol = 'Tls12, Tls11, Tls' 
+COPY image C:\image
+RUN Start-Process C:\\image\\setup.exe -ArgumentList '/f /u C:\\image\\PROD_SERVER.rsp /m /l install.log' -Wait
+RUN Remove-Item C:\\image -Force -Recurse
+
+RUN ls;cd C:\\SQLLIB\\BIN;Start-Process db2cmdadmin.exe -ArgumentList 'db2setcp db2 create database testdb' -Wait;cd C:\\
+
+RUN Invoke-WebRequest -UseBasicParsing -Uri 'https://dotnetbinaries.blob.core.windows.net/servicemonitor/2.0.1.3/ServiceMonitor.exe' -OutFile 'ServiceMonitor.exe'
+
+SHELL ["cmd", "/S", "/C"]
+
+ 
+EXPOSE 50000
+
+CMD ["ServiceMonitor.exe", "DB2-0"]

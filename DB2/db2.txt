@@ -1,0 +1,83 @@
+"C:\windows\system32\MSIEXEC.EXE" /i "C:\Users\uday\Downloads\SERVER_DEC\image\db2\Windows\IBM Data Server Client.msi" /l* "C:\Users\uday\Documents\DB2LOG\DB2-CLIENT-Wed Apr 08 12_05_28 2020.log" REINSTALLMODE=vomus REINSTALL=ALL  DB2_LAUNCHER_RC_FILE="C:\Users\uday\AppData\Local\Temp\2\DB2B798.tmp"  DB2_LOG_FILE_PATH="C:\Users\uday\Documents\DB2LOG\DB2-CLIENT-Wed Apr 08 12_05_28 2020.log"  INSTALL_MODE=NEW  WININST_PATH="C:\Users\uday\Downloads\SERVER_DEC\image\db2\Windows\wininst.exe"  TRANSFORMS="C:\Users\uday\Downloads\SERVER_DEC\image\db2\Windows\CLIENT\1033.MST" SETUPEXEDIR="C:\Users\uday\Downloads\SERVER_DEC\image\db2\Windows" SETUPEXENAME="issetup.exe"
+
+
+                                        
+
+Product to install:                     	IBM Data Server Client - DB2COPY1
+
+Installation type:                      	Custom
+
+                                        
+
+DB2 copy name:                          	DB2COPY1
+
+Set as default DB2 copy:                	Yes
+
+Set as default IBM database client interface copy:	Yes
+
+                                        
+
+Selected features:                      
+
+    Base application development tools  	
+
+    Base client support                 	
+
+    IBM Data Server Provider for .NET   	
+
+    First Steps                         	
+
+    Spatial Extender client             	
+
+    DB2 Update Service                  	
+
+    JDBC Support                        	
+
+    IBM Software Development Kit (SDK) for Java(TM)	
+
+    DB2 LDAP support                    	
+
+    ODBC Support                        	
+
+    OLE DB Support                      	
+
+    Replication tools                   	
+
+    SQLJ Support                        	
+
+                                        
+
+Languages:                              
+
+    English                             	
+
+                                        
+
+Target directory:                       	C:\SQLLIB
+
+                                        
+
+Space required:                         	1024 MB
+
+Installation specific driver details    
+
+IBM Data Server Driver for ODBC and CLI name:	IBM DB2 ODBC DRIVER - DB2COPY1
+
+                                        
+
+New instances:                          
+
+    Instance name:                      	DB2
+
+                                        
+
+                                        
+
+                                        
+
+Response file name:                     	C:\Users\uday\Documents\PROD_CLIENT.rsp
+
+
+
+
+---setup.exe /f /u PROD_CLIENT.rsp /m /l install.log
